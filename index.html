@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <table id="calc">
+      <input id="display" readonly />
+      <div id="buttons">
+        <tr>
+          <td><button onclick="clear()">C</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendToDisplay()">7</button></td>
+          <td><button onclick="appendToDisplay()">8</button></td>
+          <td><button onclick="appendToDispaly()">9</button></td>
+          <td><button onclick="appendToDispaly()">X</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendToDispaly()">4</button></td>
+          <td><button onclick="appendToDispaly()">5</button></td>
+          <td><button onclick="appendToDispaly()">6</button></td>
+          <td><button onclick="appendToDispaly()">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendToDispaly()">1</button></td>
+          <td><button onclick="appendToDispaly()">2</button></td>
+          <td><button onclick="appendToDispaly()">3</button></td>
+          <td><button onclick="appendToDispaly()">+</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendToDispaly()">.</button></td>
+          <td><button onclick="appendToDispaly()">0</button></td>
+          <td><button onclick="calculate()">=</button></td>
+        </tr>
+      </div>
+      <script src="index.js"></script>
+    </table>
+  </body>
+</html>
